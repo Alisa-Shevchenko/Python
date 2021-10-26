@@ -1,0 +1,69 @@
+1) Создать переменную типа String 
+name="Alisa"
+2) Создать переменную типа Integer
+age= 26
+3) Создать переменную типа Float
+weight= 59.9
+4) Создать переменную типа Bytes
+height= bytes(174)
+5) Создать переменную типа List
+pets= ["cat_1","cat_2","dog"]
+6) Создать переменную типа Tuple
+names_of_cats= ("Sonyk","Lisa")
+7) Создать переменную типа Set
+surname= set("Shevchenko")
+8. Создать переменную типа Frozen set
+Name= frozenset("Alisa")
+9) Создать переменную типа Dict
+appearance= {"eye color" : "green",
+             "hair colour" : "brown"}
+
+10) Вывести в консоль все выше перечисленные переменные с добавлением типа данных.
+
+print(name)
+type_name = type(name)
+print("Type_name:" ,type_name)
+
+print(age)
+type_age = type(age)
+print("Type_age:" ,type_age)
+
+print(weight)
+type_weight = type(weight)
+print("Type_weight:" ,type_weight)
+
+print(height)
+type_height = type(height)
+print("Type_height:" ,type_height)
+
+print(pets)
+type_pets = type(pets)
+print("Type_pets:" ,type_pets)
+
+print(names_of_cats)
+type_names_of_cats = type(names_of_cats)
+print("Type_names_of_cats:" ,type_names_of_cats)
+
+print(surname)
+type_surname = type(surname)
+print("Type_surname:" ,type_surname)
+
+print(Name)
+type_Name = type(Name)
+print("Type_Name:" ,type_Name)
+
+print(appearance)
+type_appearance = type(appearance)
+print("Type_appearance:" ,type_appearance)
+
+
+11) Создать 2 переменные String, создать переменную в которой сканкатенируете эти переменные. Вывести в консоль.
+a="Netflix "
+b="Chill"
+c="& "
+hobby=(a+c+b)
+print(hobby)
+12) Вывести в одну строку переменные типа String и Integer используя “,” (Запятую)
+print(name , age)
+13) Вывести в одну строку переменные типа String и Integer используя “+” (Плюс)
+print(name + str(age))

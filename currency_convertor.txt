@@ -1,0 +1,45 @@
+usd_item="usd"
+usd_usd_rate=1
+eur_item="eur"
+usd_eur_rate=0.86
+uah_item="uah"
+usd_uah_rate=26.23
+chf_item="chf"
+usd_chf_rate=0.91
+rub_item="rub"
+usd_rub_rate=71.88
+byn_item="byn"
+usd_byn_rate=2.46
+currency_convertor=True
+target_currency=input("Введите валюту ")
+arr=["eur","usd","rub","byn","chf","uah"]
+
+while target_currency not in arr:
+    print("Неизвестная валюта!Попробуте еще раз.")
+    target_currency = input("Введите валюту ")
+    if target_currency in arr:
+        break
+target_currency_amount= input("Введите сумму ")
+if target_currency=="uah":
+    currency_result=int(target_currency_amount)/usd_uah_rate
+    print(target_currency_amount,uah_item, "=",currency_result,usd_item)
+
+if target_currency=="usd":
+    currency_result= int(target_currency_amount)/usd_usd_rate
+    print(target_currency_amount,usd_item,"=",currency_result,usd_item)
+
+if target_currency=="eur":
+    currency_result = int(target_currency_amount)/usd_eur_rate
+    print(target_currency_amount,eur_item,"=",currency_result,usd_item)
+
+if target_currency=="chf":
+    currency_result =int(target_currency_amount)/usd_chf_rate
+    print(target_currency_amount,chf_item,"=",currency_result,usd_item)
+
+if target_currency=="rub":
+    currency_result = int(target_currency_amount)/usd_rub_rate
+    print(target_currency_amount,rub_item,"=",currency_result,usd_item)
+
+if target_currency=="byn":
+    currency_result =int(target_currency_amount)/usd_byn_rate
+    print(target_currency_amount,byn_item,"=",currency_result,usd_item)

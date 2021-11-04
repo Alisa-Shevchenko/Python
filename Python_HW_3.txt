@@ -136,6 +136,6 @@ elif target_currency=="BYN":
 
 #31.7 Последним оставить else, при выполнений которого в консоль выведется (“Unknow currency”)
 
-else:
-    target_currency !=list
-    print("Unknow currency")
+if target_currency not in list:
+    
+   print("Unknow currency")
